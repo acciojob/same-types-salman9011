@@ -9,7 +9,7 @@ function isSameType(value1, value2) {
 	}
 
     // Check if both values are of the same type (number, string)
-    if (typeof value1 === typeof value2) {
+   else if (typeof value1 === typeof value2) {
         return true;
     }
  
