@@ -5,12 +5,15 @@ function isSameType(value1, value2) {
     }
 
     // Check if the types are the same
-    return typeof value1 === typeof value2;
+else if(typeof value1==typeof value2){
+	return true;
+}
+	else return false;
 }
 
 // Get user input using prompt
-let value1 = prompt("Enter Start of the Range.");
-let value2 = prompt("Enter End Of the Range.");
+// let value1 = prompt("Enter Start of the Range.");
+// let value2 = prompt("Enter End Of the Range.");
 
 // Display the result
-alert(isSameType(value1, value2));
+ alert(isSameType(value1, value2));
