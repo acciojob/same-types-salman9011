@@ -1,6 +1,6 @@
 function isSameType(value1, value2) {
     // Check if both values are NaN
-    if (isNaN(value1) && isNaN(value2)) {
+    if (Number.isNaN(Number(value1)) && Number.isNaN(Number(value2))) {
         return true;
     }
 
@@ -10,14 +10,13 @@ function isSameType(value1, value2) {
     }
 
     // Check if both values are not NaN
-    if (!isNaN(value1) && !isNaN(value2)) {
+    if (!Number.isNaN(Number(value1)) && !Number.isNaN(Number(value2))) {
         return false;
     }
 }
 
-// Get user input using prompt
-let value1 = prompt("Enter Start of the Range.");
-let value2 = prompt("Enter End Of the Range.");
+// Example usage
+const value1 = "hello";
+const value2 = 123;
 
-// Display the result
-alert(isSameType(value1, value2));
+console.log(isSameType(value1, value2)); // This should return false
